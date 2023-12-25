@@ -1,20 +1,20 @@
 export const ROUTES = {
-  GROUP: "group/",
-  TEACHER: "teacher/",
-  CLASSROOM: "classroom/",
+  GROUP: "group",
+  TEACHER: "teacher",
+  CLASSROOM: "classroom",
   EXAM: "exam",
 };
 
 export const TRANSLATED_NAMES = {
   GROUP: "Группы",
-  TEACHER: "Преподватели",
+  TEACHER: "Преподавателей",
   CLASSROOM: "Аудитории",
   EXAM: "Экзамены",
 };
 
 export const SEARCH_NAMES = {
   GROUP: "группы",
-  TEACHER: "преподвателя",
+  TEACHER: "преподавателя",
   CLASSROOM: "aудитории",
   EXAM: "экзамена",
 };

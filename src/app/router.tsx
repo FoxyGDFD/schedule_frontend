@@ -1,6 +1,7 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import { Main, Layout } from "@pages/index";
 import { ROUTES } from "@/shared/lib/router-dom/routes";
+import { Typography } from "simplify-dev";
 
 export const router = createBrowserRouter([
   {
@@ -38,8 +39,20 @@ export const router = createBrowserRouter([
         element: <Main />,
       },
       {
-        path: `${ROUTES.EXAM}/:id`,
+        path: `${ROUTES.EXAM}/group/:id`,
         element: <Main />,
+      },
+      {
+        path: `${ROUTES.EXAM}/teacher/:id`,
+        element: <Main />,
+      },
+      {
+        path: "*",
+        element: (
+          <Typography as="h2" className="text-center">
+            Такой страницы не суцествует
+          </Typography>
+        ),
       },
       {
         path: "",

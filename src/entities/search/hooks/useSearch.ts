@@ -7,7 +7,7 @@ import { useLocation } from "react-router-dom";
 
 const useSearch = (value: string) => {
   const location = useLocation();
-  const key = location.pathname.replace(/\//gi, "").toUpperCase();
+  const key = location.pathname.replace(/\/|[0-9]/gi, "").toUpperCase();
 
   const name = SEARCH_NAMES[
     (key as keyof typeof SEARCH_NAMES) || "GROUP"
