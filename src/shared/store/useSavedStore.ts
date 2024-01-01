@@ -35,7 +35,7 @@ const useSavedStore = create(
         })),
       saveClassroom: (classroom: Schedule) =>
         set((state: SavedSchedules) => ({
-          classroom: [...state.teacher, classroom],
+          classroom: [...state.classroom, classroom],
         })),
 
       removeGroup: (group: Schedule) =>
