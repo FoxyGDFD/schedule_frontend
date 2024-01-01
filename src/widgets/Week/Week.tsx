@@ -92,7 +92,7 @@ const Week: FC = () => {
           as="h3"
           className="flex justify-center items-center text-center"
         >
-          Выберите расписание из сохранённых или найтиде при помощи поиска
+          Выберите расписание из сохранённых или найдите при помощи поиска
         </Typography>
       )}
     </>

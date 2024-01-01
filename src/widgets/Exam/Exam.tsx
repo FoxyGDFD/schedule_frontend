@@ -15,7 +15,12 @@ const Exam = ({
     <Box className="flex gap-[20px] max-md:flex-wrap">
       <Box>
         <Typography as="h2" className="w-full text-[#2358e1] whitespace-nowrap">
-          {date_and_time.split("T")[0].replace(/-/gi, ".")}
+          {date_and_time
+            .split("T")[0]
+            .replace(/-/gi, ".")
+            .split(".")
+            .reverse()
+            .join(".")}
         </Typography>
         <Typography
           as="h6"
